@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Käft med dig!</title>
+  <style type="text/css">
+    /* Make the entire screen clickable */
+    html, body {
+      height: 100%;
+      overflow: hidden;
+    }
+    body {
+      text-align: center;
+      cursor: pointer;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+  </style>
+</head>
+<body onclick="keft();">
+
+  <img src="henrik.png" alt="Käft med dig!" title="Käft med dig!">
+  <audio src="keftmeddig.mp3" type="audio/mpeg" preload="auto" autoplay></audio>
+
+  <script type="text/javascript">
+    var audio = document.getElementsByTagName('audio')[0];
+
+    function keft() {
+      audio.play();
+    }
+  </script>
+</body>
+</html>
